@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Test.Grpc.Messages";
+
+package FunctionRpc;
+
+service FunctionRpc {
+ rpc EventStream (stream StreamingMessage) returns (stream StreamingMessage) {}
+}
+
+message StreamingMessage {
+  string request_id = 1;
+}
