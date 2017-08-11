@@ -1,6 +1,6 @@
-# Grpc & vstest 'dll not found' repro
+# Grpc & xunit 'dll not found' repro
 
-I'm unable to use Grpc.Core out-of-box in test projects running with vstest.
+I'm unable to use Grpc.Core out-of-box in test projects running with xunit.
 
 When I attempt to run a test that spins up a grpc server, I get the following error:
 
